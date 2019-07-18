@@ -1,5 +1,5 @@
 {
-  "name": "fake-simple-json-datasource",
+  "name": "grafana-presto-json-api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
