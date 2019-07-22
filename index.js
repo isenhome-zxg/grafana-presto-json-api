@@ -175,8 +175,8 @@ app.all('/query', function (req, res) {
 
     var range_model = "(${column_name} >= ${column_from_value} and ${column_name} <= ${column_to_value})";
 
-    var reg = /\$__timeFilter\(@([0-9 _ a-z A-Z \( \) \'\"]*)@\)/mgi;
-    var reg_inner = /\$__timeFilter\(@([0-9 _ a-z A-Z \( \) \'\"]*)@\)/;
+    var reg = /\$__timeFilter\(@([0-9 _ a-z A-Z \( \) \'\" ,]*)@\)/mgi;
+    var reg_inner = /\$__timeFilter\(@([0-9 _ a-z A-Z \( \) \'\" ,]*)@\)/;
 
     var each_count = 0;
     _.each(req.body.targets, function (target) {
