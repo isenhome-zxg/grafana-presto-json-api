@@ -184,7 +184,7 @@ app.all('/query', function (req, res) {
         if (req.body.adhocFilters) {
             for (let i = 0; i < req.body.adhocFilters.length; i++) {
                 let item = req.body.adhocFilters[i];
-                sql = sql.replace("${" + item.key + "}", item.value);
+                sql = sql.replace( eval("/\\$\\{" + item.key + "\\}/g"), item.value);
             }
         }
         var m = sql.match(reg);
