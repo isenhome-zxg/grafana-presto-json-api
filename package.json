@@ -13,6 +13,6 @@
     "express": "^4.13.4",
     "lodash": "^4.13.1",
     "presto-client": "^0.6.0",
-    "json-bigint": "^0.3.0"
+    "json-bigint": "^1.0.0"
   }
 }
