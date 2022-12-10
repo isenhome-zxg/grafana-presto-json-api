@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.15.1",
-    "express": "^4.13.4",
+    "express": "^4.17.3",
     "lodash": "^4.13.1",
     "presto-client": "^0.6.0",
     "json-bigint": "^0.3.0"
